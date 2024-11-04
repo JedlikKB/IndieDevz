@@ -1,4 +1,0 @@
-repository "IndieDevz_1@CsokiCsavo@cloud"
-  path "/"
-    br "/main"
-    co "/main"
