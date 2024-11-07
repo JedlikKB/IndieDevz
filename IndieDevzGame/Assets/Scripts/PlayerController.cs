@@ -5,6 +5,7 @@ using System.Collections.Generic;
 
 public class PlayertController : MonoBehaviour
 {
+
     public float moveSpeed = 5f; // A mozgás sebessége (a playert kiválasztva a scriptnél manuálisan változtatható)
 
     private void Update()
@@ -18,5 +19,7 @@ public class PlayertController : MonoBehaviour
 
         // Mozgás végrehajtása
         transform.Translate(movement * moveSpeed * Time.deltaTime);
+
+        
     }
 }
