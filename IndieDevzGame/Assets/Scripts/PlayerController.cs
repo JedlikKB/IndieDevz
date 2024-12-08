@@ -5,8 +5,21 @@ using System.Collections.Generic;
 
 public class PlayertController : MonoBehaviour
 {
-
+    
     public float moveSpeed = 5f; // A mozgás sebessége (a playert kiválasztva a scriptnél manuálisan változtatható)
+
+    //----------------------------------------------Tüzelés---------------------------------------------------
+    public GameObject projectilePrefab; // A lovedek prefab
+    public Transform shootPoint;       // A kilovesi pont (allithato)
+    public float fireRate = 0.5f;      // Idokoz ket loves kozott (masodpercben)
+    private float nextFireTime = 0f;   // A kovetkezo loves idopontja
+
+    void Shoot()                                                                                                        
+    {
+        // Lovedek kilovese
+        Instantiate(projectilePrefab, shootPoint.position, Quaternion.identity);
+    }
+    //--------------------------------------------------------------------------------------------------------
 
     private void Update()
     {
@@ -20,6 +33,14 @@ public class PlayertController : MonoBehaviour
         // Mozgás végrehajtása
         transform.Translate(movement * moveSpeed * Time.deltaTime);
 
-        
+        //-------------------------------------------------Tüzelés------------------------------------------------
+        // Ha a Space lenyomva, es elerkezett a kovetkezo loves ideje (tudom kicsit erdekes de mukodik esku)
+        if (Input.GetKey(KeyCode.Space) && Time.time >= nextFireTime)
+        {
+            Shoot();
+            nextFireTime = Time.time + fireRate; // Megadjuk a kovi loves idopontjat
+        }
+        //--------------------------------------------------------------------------------------------------------
+
     }
 }
