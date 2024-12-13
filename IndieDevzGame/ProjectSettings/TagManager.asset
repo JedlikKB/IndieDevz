@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   serializedVersion: 3
+=======
+  serializedVersion: 2
+>>>>>>> Stashed changes
 =======
   serializedVersion: 2
 >>>>>>> Stashed changes
@@ -46,7 +50,10 @@ TagManager:
     uniqueID: 0
     locked: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_RenderingLayers:
   - Default
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes

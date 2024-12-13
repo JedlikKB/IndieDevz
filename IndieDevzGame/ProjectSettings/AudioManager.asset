@@ -13,7 +13,10 @@ AudioManager:
   m_VirtualVoiceCount: 512
   m_RealVoiceCount: 32
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_EnableOutputSuspension: 1
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
   m_SpatializerPlugin: 

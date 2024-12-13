@@ -7,7 +7,11 @@ QualitySettings:
   m_CurrentQuality: 5
   m_QualitySettings:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   - serializedVersion: 4
+=======
+  - serializedVersion: 2
+>>>>>>> Stashed changes
 =======
   - serializedVersion: 2
 >>>>>>> Stashed changes
@@ -24,8 +28,12 @@ QualitySettings:
     shadowmaskMode: 0
     skinWeights: 1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     globalTextureMipmapLimit: 1
     textureMipmapLimitSettings: []
+=======
+    textureQuality: 1
+>>>>>>> Stashed changes
 =======
     textureQuality: 1
 >>>>>>> Stashed changes
@@ -36,6 +44,7 @@ QualitySettings:
     realtimeReflectionProbes: 0
     billboardsFaceCameraPosition: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     useLegacyDetailDistribution: 0
     adaptiveVsync: 0
     vSyncCount: 0
@@ -45,6 +54,11 @@ QualitySettings:
     lodBias: 0.3
     maximumLODLevel: 0
     enableLODCrossFade: 1
+=======
+    vSyncCount: 0
+    lodBias: 0.3
+    maximumLODLevel: 0
+>>>>>>> Stashed changes
 =======
     vSyncCount: 0
     lodBias: 0.3
@@ -63,6 +77,7 @@ QualitySettings:
     resolutionScalingFixedDPIFactor: 1
     customRenderPipeline: {fileID: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     terrainQualityOverrides: 0
     terrainPixelError: 1
     terrainDetailDensityScale: 1
@@ -74,6 +89,10 @@ QualitySettings:
     terrainMaxTrees: 50
     excludedTargetPlatforms: []
   - serializedVersion: 4
+=======
+    excludedTargetPlatforms: []
+  - serializedVersion: 2
+>>>>>>> Stashed changes
 =======
     excludedTargetPlatforms: []
   - serializedVersion: 2
@@ -91,8 +110,12 @@ QualitySettings:
     shadowmaskMode: 0
     skinWeights: 2
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     globalTextureMipmapLimit: 0
     textureMipmapLimitSettings: []
+=======
+    textureQuality: 0
+>>>>>>> Stashed changes
 =======
     textureQuality: 0
 >>>>>>> Stashed changes
@@ -103,6 +126,7 @@ QualitySettings:
     realtimeReflectionProbes: 0
     billboardsFaceCameraPosition: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     useLegacyDetailDistribution: 0
     adaptiveVsync: 0
     vSyncCount: 0
@@ -112,6 +136,11 @@ QualitySettings:
     lodBias: 0.4
     maximumLODLevel: 0
     enableLODCrossFade: 1
+=======
+    vSyncCount: 0
+    lodBias: 0.4
+    maximumLODLevel: 0
+>>>>>>> Stashed changes
 =======
     vSyncCount: 0
     lodBias: 0.4
@@ -130,6 +159,7 @@ QualitySettings:
     resolutionScalingFixedDPIFactor: 1
     customRenderPipeline: {fileID: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     terrainQualityOverrides: 0
     terrainPixelError: 1
     terrainDetailDensityScale: 1
@@ -141,6 +171,10 @@ QualitySettings:
     terrainMaxTrees: 50
     excludedTargetPlatforms: []
   - serializedVersion: 4
+=======
+    excludedTargetPlatforms: []
+  - serializedVersion: 2
+>>>>>>> Stashed changes
 =======
     excludedTargetPlatforms: []
   - serializedVersion: 2
@@ -158,8 +192,12 @@ QualitySettings:
     shadowmaskMode: 0
     skinWeights: 2
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     globalTextureMipmapLimit: 0
     textureMipmapLimitSettings: []
+=======
+    textureQuality: 0
+>>>>>>> Stashed changes
 =======
     textureQuality: 0
 >>>>>>> Stashed changes
@@ -170,6 +208,7 @@ QualitySettings:
     realtimeReflectionProbes: 0
     billboardsFaceCameraPosition: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     useLegacyDetailDistribution: 0
     adaptiveVsync: 0
     vSyncCount: 1
@@ -179,6 +218,11 @@ QualitySettings:
     lodBias: 0.7
     maximumLODLevel: 0
     enableLODCrossFade: 1
+=======
+    vSyncCount: 1
+    lodBias: 0.7
+    maximumLODLevel: 0
+>>>>>>> Stashed changes
 =======
     vSyncCount: 1
     lodBias: 0.7
@@ -197,6 +241,7 @@ QualitySettings:
     resolutionScalingFixedDPIFactor: 1
     customRenderPipeline: {fileID: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     terrainQualityOverrides: 0
     terrainPixelError: 1
     terrainDetailDensityScale: 1
@@ -208,6 +253,10 @@ QualitySettings:
     terrainMaxTrees: 50
     excludedTargetPlatforms: []
   - serializedVersion: 4
+=======
+    excludedTargetPlatforms: []
+  - serializedVersion: 2
+>>>>>>> Stashed changes
 =======
     excludedTargetPlatforms: []
   - serializedVersion: 2
@@ -225,8 +274,12 @@ QualitySettings:
     shadowmaskMode: 1
     skinWeights: 2
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     globalTextureMipmapLimit: 0
     textureMipmapLimitSettings: []
+=======
+    textureQuality: 0
+>>>>>>> Stashed changes
 =======
     textureQuality: 0
 >>>>>>> Stashed changes
@@ -237,6 +290,7 @@ QualitySettings:
     realtimeReflectionProbes: 1
     billboardsFaceCameraPosition: 1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     useLegacyDetailDistribution: 0
     adaptiveVsync: 0
     vSyncCount: 1
@@ -246,6 +300,11 @@ QualitySettings:
     lodBias: 1
     maximumLODLevel: 0
     enableLODCrossFade: 1
+=======
+    vSyncCount: 1
+    lodBias: 1
+    maximumLODLevel: 0
+>>>>>>> Stashed changes
 =======
     vSyncCount: 1
     lodBias: 1
@@ -264,6 +323,7 @@ QualitySettings:
     resolutionScalingFixedDPIFactor: 1
     customRenderPipeline: {fileID: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     terrainQualityOverrides: 0
     terrainPixelError: 1
     terrainDetailDensityScale: 1
@@ -275,6 +335,10 @@ QualitySettings:
     terrainMaxTrees: 50
     excludedTargetPlatforms: []
   - serializedVersion: 4
+=======
+    excludedTargetPlatforms: []
+  - serializedVersion: 2
+>>>>>>> Stashed changes
 =======
     excludedTargetPlatforms: []
   - serializedVersion: 2
@@ -292,8 +356,12 @@ QualitySettings:
     shadowmaskMode: 1
     skinWeights: 4
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     globalTextureMipmapLimit: 0
     textureMipmapLimitSettings: []
+=======
+    textureQuality: 0
+>>>>>>> Stashed changes
 =======
     textureQuality: 0
 >>>>>>> Stashed changes
@@ -304,6 +372,7 @@ QualitySettings:
     realtimeReflectionProbes: 1
     billboardsFaceCameraPosition: 1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     useLegacyDetailDistribution: 0
     adaptiveVsync: 0
     vSyncCount: 1
@@ -313,6 +382,11 @@ QualitySettings:
     lodBias: 1.5
     maximumLODLevel: 0
     enableLODCrossFade: 1
+=======
+    vSyncCount: 1
+    lodBias: 1.5
+    maximumLODLevel: 0
+>>>>>>> Stashed changes
 =======
     vSyncCount: 1
     lodBias: 1.5
@@ -331,6 +405,7 @@ QualitySettings:
     resolutionScalingFixedDPIFactor: 1
     customRenderPipeline: {fileID: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     terrainQualityOverrides: 0
     terrainPixelError: 1
     terrainDetailDensityScale: 1
@@ -342,6 +417,10 @@ QualitySettings:
     terrainMaxTrees: 50
     excludedTargetPlatforms: []
   - serializedVersion: 4
+=======
+    excludedTargetPlatforms: []
+  - serializedVersion: 2
+>>>>>>> Stashed changes
 =======
     excludedTargetPlatforms: []
   - serializedVersion: 2
@@ -359,10 +438,16 @@ QualitySettings:
     shadowmaskMode: 1
     skinWeights: 255
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     globalTextureMipmapLimit: 0
     textureMipmapLimitSettings: []
     anisotropicTextures: 2
     antiAliasing: 2
+=======
+    textureQuality: 0
+    anisotropicTextures: 2
+    antiAliasing: 0
+>>>>>>> Stashed changes
 =======
     textureQuality: 0
     anisotropicTextures: 2
@@ -373,6 +458,7 @@ QualitySettings:
     realtimeReflectionProbes: 1
     billboardsFaceCameraPosition: 1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     useLegacyDetailDistribution: 0
     adaptiveVsync: 0
     vSyncCount: 1
@@ -382,6 +468,11 @@ QualitySettings:
     lodBias: 2
     maximumLODLevel: 0
     enableLODCrossFade: 1
+=======
+    vSyncCount: 1
+    lodBias: 2
+    maximumLODLevel: 0
+>>>>>>> Stashed changes
 =======
     vSyncCount: 1
     lodBias: 2
@@ -399,6 +490,7 @@ QualitySettings:
     asyncUploadPersistentBuffer: 1
     resolutionScalingFixedDPIFactor: 1
     customRenderPipeline: {fileID: 0}
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
     terrainQualityOverrides: 0
     terrainPixelError: 1
@@ -426,6 +518,8 @@ QualitySettings:
     Standalone: 5
     VisionOS: 5
 =======
+=======
+>>>>>>> Stashed changes
     excludedTargetPlatforms: []
   m_PerPlatformDefaultQuality:
     Android: 2
@@ -437,6 +531,9 @@ QualitySettings:
     PS5: 5
     Stadia: 5
     Standalone: 5
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     WebGL: 3
     Windows Store Apps: 5

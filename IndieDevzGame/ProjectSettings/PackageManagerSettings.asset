@@ -33,8 +33,13 @@ MonoBehaviour:
     m_Modified: 0
     m_ErrorMessage: 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     m_UserModificationsInstanceId: -870
     m_OriginalInstanceId: -872
+=======
+    m_UserModificationsInstanceId: -892
+    m_OriginalInstanceId: -894
+>>>>>>> Stashed changes
 =======
     m_UserModificationsInstanceId: -892
     m_OriginalInstanceId: -894

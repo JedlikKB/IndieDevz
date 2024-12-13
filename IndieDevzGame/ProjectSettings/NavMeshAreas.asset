@@ -72,7 +72,11 @@ NavMeshProjectSettings:
   m_LastAgentTypeID: -887442657
   m_Settings:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   - serializedVersion: 3
+=======
+  - serializedVersion: 2
+>>>>>>> Stashed changes
 =======
   - serializedVersion: 2
 >>>>>>> Stashed changes
@@ -89,9 +93,13 @@ NavMeshProjectSettings:
     manualTileSize: 0
     tileSize: 256
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     buildHeightMesh: 0
     maxJobWorkers: 0
     preserveTilesOutsideBounds: 0
+=======
+    accuratePlacement: 0
+>>>>>>> Stashed changes
 =======
     accuratePlacement: 0
 >>>>>>> Stashed changes

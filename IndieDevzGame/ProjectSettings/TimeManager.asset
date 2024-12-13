@@ -4,11 +4,15 @@
 TimeManager:
   m_ObjectHideFlags: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   Fixed Timestep:
     m_Count: 2822399
     m_Rate:
       m_Denominator: 1
       m_Numerator: 141120000
+=======
+  Fixed Timestep: 0.02
+>>>>>>> Stashed changes
 =======
   Fixed Timestep: 0.02
 >>>>>>> Stashed changes
