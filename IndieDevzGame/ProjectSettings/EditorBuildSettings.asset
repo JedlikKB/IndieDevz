@@ -8,5 +8,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/map1.unity
     guid: f425f93bd7521874a82205004d2d2a35
+  - enabled: 1
+    path: Assets/Scenes/Map1Scene.unity
+    guid: 1b1e9f3456aa41c43a8e59de084c0160
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
