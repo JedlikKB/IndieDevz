@@ -2,26 +2,42 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public int health = 1; // Ellenfél életereje
+    public int health = 3;            // Ellenség életereje
+    public GameObject pickupPrefab;   // Pickup prefab hivatkozás
 
     void OnTriggerEnter2D(Collider2D other)
     {
         // Ha a játékos lövedéke eltalálja
         if (other.CompareTag("PlayerProjectile"))
         {
-            health--;
-            Destroy(other.gameObject); // Lövedék megsemmisítése
+            TakeDamage(1);              // Sebzés okozása
+            Destroy(other.gameObject);  // Lövedék megsemmisítése
+        }
+    }
 
-            if (health <= 0)
-            {
-                Die();
-            }
+    public void TakeDamage(int damage)
+    {
+        health -= damage;
+        if (health <= 0)
+        {
+            Die();
         }
     }
 
     void Die()
     {
-        // Ellenfél megsemmisítése
-        Destroy(gameObject);
+        // 50% esély, hogy Pickup jelenjen meg
+        float chance = Random.Range(0f, 1f);  // Véletlenszám 0 és 1 között
+        if (chance <= 0.3f)  // 30% esély
+        {
+            Instantiate(pickupPrefab, transform.position, Quaternion.identity);
+            Debug.Log("Pickup Megjelent!");
+        }
+        else
+        {
+            Debug.Log("Nincs Pickup!");
+        }
+
+        Destroy(gameObject);  // Ellenség megsemmisítése
     }
 }
