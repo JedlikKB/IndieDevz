@@ -1,17 +1,24 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class Boss : MonoBehaviour
 {
     // Életerő Beállítások
-    public int maxHealth = 50;
+    public int maxHealth = 100;
     private int currentHealth;
 
     // UI Beállítások
     public Slider healthBar;
-    public GameObject victoryText; // Győzelem szöveg
 
+<<<<<<< Updated upstream
+=======
+    // Játékos referenciája
+    public GameObject player; 
+    public float activationX = 50f; // Az X koordináta, amikor az életerőcsík megjelenik
+
+>>>>>>> Stashed changes
     // Lövési Beállítások
     public GameObject enemyProjectile_0;
     public Transform shootPoint;
@@ -25,9 +32,15 @@ public class Boss : MonoBehaviour
         healthBar.maxValue = maxHealth;
         healthBar.value = currentHealth;
 
+<<<<<<< Updated upstream
         // Győzelem szöveg elrejtése
         if (victoryText != null)
             victoryText.SetActive(false);
+=======
+        // Kezdetben rejtjük el az életerőcsíkot
+        if (healthBar != null)
+            healthBar.gameObject.SetActive(false);
+>>>>>>> Stashed changes
 
         // Lövési ciklus elindítása
         StartCoroutine(RandomFirePatterns());
@@ -111,7 +124,7 @@ public class Boss : MonoBehaviour
     {
         if (other.CompareTag("PlayerProjectile"))
         {
-            TakeDamage(5);
+            TakeDamage(1);
             Destroy(other.gameObject);
         }
     }
@@ -124,20 +137,21 @@ public class Boss : MonoBehaviour
 
         if (currentHealth <= 0)
         {
-            Die();
+            Victory();
         }
     }
 
     // Halál Kezelése
-    void Die()
+    void Victory()
     {
         Debug.Log("A boss legyőzve!");
 
-        // Győzelmi Szöveg Aktiválása
-        if (victoryText != null)
-            victoryText.SetActive(true);
-
         // Boss Megsemmisítése
         Destroy(gameObject);
+
+        SceneManager.LoadScene("VictoryScreen");
+
+
     }
+
 }

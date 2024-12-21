@@ -61,6 +61,21 @@ public class PlayerHealth : MonoBehaviour
 
     void Die()
     {
+<<<<<<< Updated upstream
         Debug.Log("Játékos meghalt!");
+=======
+        SceneManager.LoadScene("GameOver");
+    }
+
+    public void RestartGame()
+    {
+        // Újraindítja a játékot, új jelenet betöltésével
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+    public void GoToMainMenu()
+    {
+        // Vissza a főmenübe
+        SceneManager.LoadScene("MainMenu");
+>>>>>>> Stashed changes
     }
 }
