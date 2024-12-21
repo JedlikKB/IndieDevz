@@ -11,5 +11,14 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Map1Scene.unity
     guid: 1b1e9f3456aa41c43a8e59de084c0160
+<<<<<<< Updated upstream
+=======
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 724976dd153be0346924742acdd74d34
+  - enabled: 1
+    path: Assets/Scenes/VictoryScreen.unity
+    guid: b4603595c8cd4a74d8392a860eaf4683
+>>>>>>> Stashed changes
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
