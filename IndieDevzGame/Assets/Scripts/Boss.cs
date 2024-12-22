@@ -12,13 +12,10 @@ public class Boss : MonoBehaviour
     // UI Beállítások
     public Slider healthBar;
 
-<<<<<<< Updated upstream
-=======
     // Játékos referenciája
-    public GameObject player; 
+    public GameObject player; // Állítsd be az inspectorban
     public float activationX = 50f; // Az X koordináta, amikor az életerőcsík megjelenik
 
->>>>>>> Stashed changes
     // Lövési Beállítások
     public GameObject enemyProjectile_0;
     public Transform shootPoint;
@@ -26,21 +23,17 @@ public class Boss : MonoBehaviour
     public float maxProjectileSpeed = 8f;
     public float fireRate = 2f;
 
+    private bool bossActivated = false; // Jelzi, hogy a boss aktív-e
+
     void Start()
     {
         currentHealth = maxHealth;
         healthBar.maxValue = maxHealth;
         healthBar.value = currentHealth;
 
-<<<<<<< Updated upstream
-        // Győzelem szöveg elrejtése
-        if (victoryText != null)
-            victoryText.SetActive(false);
-=======
         // Kezdetben rejtjük el az életerőcsíkot
         if (healthBar != null)
             healthBar.gameObject.SetActive(false);
->>>>>>> Stashed changes
 
         // Lövési ciklus elindítása
         StartCoroutine(RandomFirePatterns());
@@ -51,7 +44,7 @@ public class Boss : MonoBehaviour
     {
         while (currentHealth > 0)
         {
-            int pattern = Random.Range(0, 3);
+            int pattern = Random.Range(0, 6);
             switch (pattern)
             {
                 case 0:
@@ -67,6 +60,21 @@ public class Boss : MonoBehaviour
 
             float waitTime = Random.Range(1f, fireRate);
             yield return new WaitForSeconds(waitTime);
+        }
+    }
+    void Update()
+    {
+        // Ellenőrizzük, hogy a játékos elérte-e a meghatározott X értéket
+        if (!bossActivated && player != null && player.transform.position.x >= activationX)
+        {
+            bossActivated = true;
+
+            // Életerőcsík megjelenítése
+            if (healthBar != null)
+                healthBar.gameObject.SetActive(true);
+
+            // Lövési ciklus elindítása
+            StartCoroutine(RandomFirePatterns());
         }
     }
 
@@ -124,7 +132,7 @@ public class Boss : MonoBehaviour
     {
         if (other.CompareTag("PlayerProjectile"))
         {
-            TakeDamage(1);
+            TakeDamage(2);
             Destroy(other.gameObject);
         }
     }
@@ -137,21 +145,18 @@ public class Boss : MonoBehaviour
 
         if (currentHealth <= 0)
         {
-            Victory();
+            Die();
         }
     }
 
     // Halál Kezelése
-    void Victory()
+    void Die()
     {
         Debug.Log("A boss legyőzve!");
 
         // Boss Megsemmisítése
         Destroy(gameObject);
 
-        SceneManager.LoadScene("VictoryScreen");
-
-
+        SceneManager.LoadScene("VictoryScreen"); // Scene váltás
     }
-
 }
