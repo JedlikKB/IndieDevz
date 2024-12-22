@@ -4,6 +4,7 @@ public class Enemy : MonoBehaviour
 {
     public int health = 3;            // Ellenség életereje
     public GameObject pickupPrefab;   // Pickup prefab hivatkozás
+    public int pointsOnDestroy = 10;
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -38,6 +39,8 @@ public class Enemy : MonoBehaviour
             Debug.Log("Nincs Pickup!");
         }
 
-        Destroy(gameObject);  // Ellenség megsemmisítése
+        ScoreManager scoreManager = FindObjectOfType<ScoreManager>();
+        ScoreManager.AddScore(pointsOnDestroy);
+        Destroy(gameObject);
     }
 }

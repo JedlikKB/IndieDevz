@@ -1,17 +1,24 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
     public int maxHealth = 3;        // Maximális életerő
     private int currentHealth;       // Aktuális életerő
     public Slider healthSlider;      // UI Slider az életerőhöz
+    public GameObject gameOverPanel;  // Game Over képernyő
+    public Text gameOverText;  // Game Over üzenet
 
     private void Start()
     {
         currentHealth = maxHealth;
         healthSlider.maxValue = maxHealth;
         healthSlider.value = currentHealth;
+        if (gameOverPanel != null)
+        {
+            gameOverPanel.SetActive(false);  // Kezdetben rejtve van a Game Over panel
+        }
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -61,10 +68,7 @@ public class PlayerHealth : MonoBehaviour
 
     void Die()
     {
-<<<<<<< Updated upstream
-        Debug.Log("Játékos meghalt!");
-=======
-        SceneManager.LoadScene("GameOver");
+        SceneManager.LoadScene("GameOver"); //Game Over screenre navigál
     }
 
     public void RestartGame()
@@ -76,6 +80,5 @@ public class PlayerHealth : MonoBehaviour
     {
         // Vissza a főmenübe
         SceneManager.LoadScene("MainMenu");
->>>>>>> Stashed changes
     }
 }
