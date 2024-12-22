@@ -167,12 +167,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -706,8 +706,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -991.8, y: -485.1}
-  m_SizeDelta: {x: 333.9344, y: 42.9186}
+  m_AnchoredPosition: {x: -763.47363, y: -482.01694}
+  m_SizeDelta: {x: 286.9871, y: 36.8847}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &460343717
 MonoBehaviour:
@@ -1495,19 +1495,19 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1677687115}
-  m_LocalRotation: {x: 0, y: -0, z: 0.0061385618, w: -0.99998116}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 6.509006e-10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2045903804}
   - {fileID: 814279304}
   m_Father: {fileID: 1334072255}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.703}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 13.6246, y: 457.5447}
-  m_SizeDelta: {x: 1458.2518, y: 56.1138}
+  m_AnchoredPosition: {x: 0.000017035, y: 522.69}
+  m_SizeDelta: {x: 1270.2028, y: 56.1138}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1707227556
 GameObject:
@@ -1574,7 +1574,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1009, y: 473}
+  m_AnchoredPosition: {x: -762, y: 465}
   m_SizeDelta: {x: 346.9922, y: 86.7481}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1797780858
@@ -1624,8 +1624,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1989,6 +1989,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2529274623419335851, guid: 88c8e354634108041aade7f685e78ca7, type: 3}
+      propertyPath: leftMargin
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2529274623419335851, guid: 88c8e354634108041aade7f685e78ca7, type: 3}
       propertyPath: mainCamera
       value: 
       objectReference: {fileID: 1505558137}
@@ -2018,7 +2022,7 @@ PrefabInstance:
       objectReference: {fileID: 460343717}
     - target: {fileID: 9156523761841992137, guid: 88c8e354634108041aade7f685e78ca7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.75
+      value: -8.04
       objectReference: {fileID: 0}
     - target: {fileID: 9156523761841992137, guid: 88c8e354634108041aade7f685e78ca7, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2075,15 +2079,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1949005360688468635, guid: f3d486ce2f12f9f44bba362b19305ca0, type: 3}
       propertyPath: m_LocalScale.y
-      value: 11.3462715
+      value: 9.665889
       objectReference: {fileID: 0}
     - target: {fileID: 1949005360688468635, guid: f3d486ce2f12f9f44bba362b19305ca0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2526.4841
+      value: 2517.8792
       objectReference: {fileID: 0}
     - target: {fileID: 1949005360688468635, guid: f3d486ce2f12f9f44bba362b19305ca0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 12.1595
+      value: 12.2563
       objectReference: {fileID: 0}
     - target: {fileID: 1949005360688468635, guid: f3d486ce2f12f9f44bba362b19305ca0, type: 3}
       propertyPath: m_LocalPosition.z
