@@ -6,6 +6,8 @@ public class MovingEnemy : MonoBehaviour
     public float moveRange = 2f; // Mennyit mozogjon fel-le az Y tengely mentén
     public float moveSpeed = 2f; // Mozgás sebessége
     private float startingY; // Kezdő Y pozíció
+    public int pointsOnDestroy = 10;
+
 
     // Életerő és Tulajdonságok
     public int health = 3;
@@ -51,6 +53,8 @@ public class MovingEnemy : MonoBehaviour
 
     void Die()
     {
+        ScoreManager scoreManager = FindObjectOfType<ScoreManager>();
+        ScoreManager.AddScore(pointsOnDestroy);
         Destroy(gameObject);
     }
 

@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class Meteor : MonoBehaviour
 {
+    public int pointsOnDestroy = 5;
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         // Ha a játékos hajóval ütközik
@@ -18,6 +20,8 @@ public class Meteor : MonoBehaviour
         else if (other.CompareTag("PlayerProjectile"))
         {
             Destroy(other.gameObject); // Lövedék megsemmisítése
+            ScoreManager scoreManager = FindObjectOfType<ScoreManager>();
+            ScoreManager.AddScore(pointsOnDestroy);
             Destroy(gameObject); // Meteor megsemmisítése
         }
     }
