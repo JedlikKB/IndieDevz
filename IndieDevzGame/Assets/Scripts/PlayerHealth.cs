@@ -4,20 +4,21 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
+    
     public int maxHealth = 3;        // Maximális életerő
-    private int currentHealth;       // Aktuális életerő
+    public int currentHealth;       // Aktuális életerő
     public Slider healthSlider;      // UI Slider az életerőhöz
-    public GameObject gameOverPanel;  // Game Over képernyő
-    public Text gameOverText;  // Game Over üzenet
+  //  public GameObject gameOverPanel;  // Game Over képernyő
+  //  public Text gameOverText;  // Game Over üzenet
 
-    private void Start()
+    public void Start()
     {
         currentHealth = maxHealth;
         healthSlider.maxValue = maxHealth;
         healthSlider.value = currentHealth;
-        if (gameOverPanel != null)
+     //   if (gameOverPanel != null)
         {
-            gameOverPanel.SetActive(false);  // Kezdetben rejtve van a Game Over panel
+       //    gameOverPanel.SetActive(false);  // Kezdetben rejtve van a Game Over panel
         }
     }
 
@@ -66,9 +67,13 @@ public class PlayerHealth : MonoBehaviour
         healthSlider.value = currentHealth;
     }
 
-    void Die()
+    public void Die()
     {
         SceneManager.LoadScene("GameOver"); //Game Over screenre navigál
+    }
+    public bool IsDead()
+    {
+        return currentHealth <= 0;
     }
 
     public void RestartGame()
