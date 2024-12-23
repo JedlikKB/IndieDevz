@@ -357,10 +357,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ef30be0f06bba44eaf5b8df48c84c28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
   maxHealth: 5
+  currentHealth: 5
   healthSlider: {fileID: 460343717}
-  gameOverPanel: {fileID: 0}
-  gameOverText: {fileID: 0}
 --- !u!1 &180747708
 GameObject:
   m_ObjectHideFlags: 0
@@ -2060,8 +2060,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 7307678767384591666, guid: 88c8e354634108041aade7f685e78ca7, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
